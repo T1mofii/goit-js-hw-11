@@ -4,7 +4,8 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 const form = document.querySelector(".form");
-const input = form.querySelector("input[name='search-text']");
+// Fix: Changed 'search-text' to 'searchQuery' to match the HTML
+const input = form.querySelector("input[name='searchQuery']");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
